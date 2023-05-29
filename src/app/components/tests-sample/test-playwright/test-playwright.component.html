@@ -1,0 +1,12 @@
+<h1>Test Playwright Component</h1>
+
+<div class="input-container">
+    <label for="name">Your Name:</label>
+    <input id="name" type="text" [(ngModel)]="name" />
+</div>
+
+<button (click)="onButtonClick()">Click me!</button>
+
+<div *ngIf="buttonClicked" class="message">
+    Hello, {{ name || 'anonymous' }}! You clicked the button.
+</div>

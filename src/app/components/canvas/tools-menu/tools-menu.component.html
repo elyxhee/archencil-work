@@ -1,0 +1,7 @@
+<div class="tools-menu absolute top-1/2 right-0 transform -translate-y-1/2 mr-2 bg-archencil-blue p-2 rounded-lg">
+    <ng-container *ngFor="let button of buttons; last as isLast">
+        <div (click)="onButtonClick(button.name)" class="button-wrapper bg-sky-inspiration p-1 rounded-md w-full" [ngClass]="{'mb-2': !isLast, 'selected-button': getCurrentSelected() === button.name, 'border-archencil-orange': getCurrentSelected() === button.name}" [tooltip]="button.name" tooltip-placement="left" tooltip-offset="0,20" tooltip-size="normal" tooltip-delay="500, 0" tooltip-nest="tools-menu">
+            <img [src]="'./assets/icons/svg/tools-menu/' + button.icon" [alt]="button.alt" class="mx-auto icon">
+        </div>
+    </ng-container>
+</div>

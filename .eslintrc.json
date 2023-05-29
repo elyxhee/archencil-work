@@ -1,0 +1,74 @@
+{
+    "root": true,
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true,
+        "jest": true
+    },
+    "ignorePatterns": ["projects/**/*", "*.scss"],
+    "overrides": [
+        {
+            "files": ["*.ts"],
+            "parserOptions": {
+                "project": ["tsconfig.json", "e2e/tsconfig.json"],
+                "createDefaultProgram": true,
+                "ecmaVersion": 2017
+            },
+            "extends": [
+                "eslint:recommended",
+                "plugin:@angular-eslint/recommended",
+                "plugin:@angular-eslint/template/process-inline-templates",
+                "plugin:prettier/recommended",
+                "prettier"
+            ],
+            "plugins": ["@typescript-eslint", "prettier"],
+            "parser": "@typescript-eslint/parser",
+            "rules": {
+                "prettier/prettier": "error",
+                "max-len": ["error", { "code": 500 }],
+                //"indent": ["error", 4, { "SwitchCase": 1 }], // 4 whitespace indent
+                "indent": "off", // Disable the indent rule
+                "@angular-eslint/component-selector": [
+                    "error",
+                    {
+                        "prefix": "app",
+                        "style": "kebab-case",
+                        "type": "element"
+                    }
+                ],
+                "@angular-eslint/directive-selector": [
+                    "error",
+                    {
+                        "prefix": "app",
+                        "style": "camelCase",
+                        "type": "attribute"
+                    }
+                ],
+                "sort-imports": [
+                    "error",
+                    {
+                        "ignoreCase": true,
+                        "ignoreDeclarationSort": true,
+                        "ignoreMemberSort": true,
+                        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
+                        "allowSeparatedGroups": false
+                    }
+                ]
+            }
+        },
+        {
+            "files": ["*.html"],
+            "extends": ["plugin:@angular-eslint/template/recommended"],
+            "rules": {}
+        },
+        {
+            "files": ["*.js"],
+            "parserOptions": {
+                "ecmaVersion": 2017,
+                "sourceType": "module"
+            },
+            "extends": ["eslint:recommended"]
+        }
+    ]
+}

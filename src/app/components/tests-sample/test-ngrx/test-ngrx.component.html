@@ -1,0 +1,8 @@
+<button (click)="addMessage()">Add Message</button>
+
+<div *ngIf="messages$ | async as messages">
+    <h2>Messages:</h2>
+    <ul>
+        <li *ngFor="let message of messages; index as i" (click)="removeMessage(i)">{{ message }}</li>
+    </ul>
+</div>

@@ -1,0 +1,61 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/app/dist
+/dist
+/tmp
+/out-tsc
+/app-builds
+/release
+main.js
+!src/karma.conf.js
+*.js.map
+
+# Ignore the prompts files
+/notes/[0-9][a-z]. File *.md
+
+# WSL from Windows (ADS)
+*:*Zone.Identifier
+
+# dependencies
+node_modules
+
+# SQLite3 databases
+*.db
+
+# IDEs and editors
+.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.angular/cache
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
+
+# e2e
+/e2e/*.js
+!/e2e/protractor.conf.js
+/e2e/*.map
+/e2e/tracing
+/e2e/screenshots
+
+# System Files
+.DS_Store
+Thumbs.db

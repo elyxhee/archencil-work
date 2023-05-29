@@ -1,0 +1,155 @@
+@import './reset';
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import '~quill/dist/quill.snow.css';
+
+.github-light {
+    /* stylelint-disable-next-line no-invalid-position-at-import-rule */
+    @import 'highlight.js/styles/github';
+}
+
+.github-dark {
+    /* stylelint-disable-next-line no-invalid-position-at-import-rule */
+    @import 'highlight.js/styles/github-dark';
+}
+
+
+:root {
+    --archencil-blue: #334783;
+    --archencil-blue-rgb: 51, 71, 131;
+    --sky-inspiration: #9BADFF;
+    --sky-inspiration-rgb: 155, 173, 255;
+    --deep-midnight: #27263B;
+    --deep-midnight-rgb: 39, 38, 59;
+    --passionate-red: #D62C2C;
+    --passionate-red-rgb: 214, 44, 44;
+}
+
+/* Libre Baskerville */
+@font-face {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf') format('ttf'),
+        url('./assets/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf') format('ttf');
+}
+
+/* Source Sans Pro */
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf') format('ttf'),
+        url('./assets/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf') format('ttf');
+}
+
+/* PT Serif */
+@font-face {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/PT_Serif/PTSerif-Regular.ttf') format('ttf'),
+        url('./assets/fonts/PT_Serif/PTSerif-Regular.ttf') format('ttf');
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+blockquote,
+.highlight,
+q,
+cite {
+    font-family: 'PT Serif', serif;
+}
+
+p,
+ul,
+ol,
+dl,
+pre,
+code,
+address,
+table,
+nav,
+aside {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+}
+
+strong,
+b {
+    font-weight: bold;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+mark {
+    background-color: #ff0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+small,
+sub,
+sup {
+    font-size: smaller;
+}
+
+ins {
+    text-decoration: underline;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+kbd {
+    font-family: monospace;
+    font-size: 1em;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/* Tippy themes */
+.tippy-box[data-theme='small'] {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.75rem;
+}
+
+.tippy-box[data-theme='normal'] {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.25rem;
+}
+
+.tippy-box[data-theme='large'] {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.75rem;
+}
+
+.tippy-box[data-theme='very-large'] {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.30rem;
+}

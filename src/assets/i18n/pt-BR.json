@@ -1,0 +1,16 @@
+{
+    "greeting": "Olá",
+    "welcome_message": "Bem-vindo(a) ao nosso aplicativo!",
+    "user": {
+        "name": "Nome",
+        "age": "Idade"
+    },
+    "buttons": {
+        "submit": "Enviar",
+        "cancel": "Cancelar"
+    },
+    "errors": {
+        "required_field": "Este campo é obrigatório",
+        "invalid_input": "Entrada inválida"
+    }
+}

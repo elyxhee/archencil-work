@@ -1,0 +1,44 @@
+{
+    "productName": "Archencil",
+    "appId": "org.archencil",
+    "asar": true,
+    "directories": {
+        "buildResources": "resources/",
+        "output": "release/"
+    },
+    "files": [
+        "**/*",
+        "!**/*.ts",
+        "!*.map",
+        "!package.json",
+        "!package-lock.json",
+        "resources/**/*",
+        {
+            "from": "../dist",
+            "filter": ["**/*"]
+        }
+    ],
+    "win": {
+        "icon": "resources/favicon.ico",
+        "target": ["portable"],
+        "signAndEditExecutable": true
+    },
+    "nsis": {
+        "oneClick": true,
+        "allowToChangeInstallationDirectory": false,
+        "installerIcon": "resources/favicon.ico",
+        "uninstallerIcon": "resources/favicon.ico"
+    },    
+    "portable": {
+        "splashImage": "dist/assets/icons/electron.bmp"
+    },
+    "mac": {
+        "icon": "resources/favicon.png",
+        "target": ["dmg"]
+    },
+    "linux": {
+        "icon": "resources/favicon.png",
+        "category": "Utility",
+        "target": ["AppImage"]
+    }
+}

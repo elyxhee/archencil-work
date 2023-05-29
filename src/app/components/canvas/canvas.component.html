@@ -1,0 +1,10 @@
+<div class="canvas-container custom-cursor">
+    <canvas id="canvas"></canvas>
+    <div class="red-dot" *ngIf="showRedDot" [style.left.px]="redDotPosition.x" [style.top.px]="redDotPosition.y"></div>
+    
+    <app-bounding-box [canvas]="canvas" [workingArea]="workingArea"></app-bounding-box>
+
+    <app-tools-menu [canvas]="canvas"></app-tools-menu> 
+    
+</div>
+

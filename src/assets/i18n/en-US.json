@@ -1,0 +1,16 @@
+{
+    "greeting": "Hello",
+    "welcome_message": "Welcome to our application!",
+    "user": {
+        "name": "Name",
+        "age": "Age"
+    },
+    "buttons": {
+        "submit": "Submit",
+        "cancel": "Cancel"
+    },
+    "errors": {
+        "required_field": "This field is required",
+        "invalid_input": "Invalid input"
+    }
+}
