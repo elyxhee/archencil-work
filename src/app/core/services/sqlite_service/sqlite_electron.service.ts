@@ -53,7 +53,7 @@ export class SqliteServiceElectron {
                         reject(err);
                     } else {
                         console.log('Database opened successfully');
-                        this.tables = new Tables(this.db);
+                        //this.tables = new Tables(this.db);
                         resolve();
                     }
                 });
