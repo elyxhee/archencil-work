@@ -23,7 +23,7 @@
   "private": true,
   "electronProjectPath": "Z:/development/archencil",
   "scripts": {
-    "postinstall": "install-app-deps && npm run rebuild",
+    "postinstall": "install-app-deps",
     "ng:serve": "ng serve -c web -o",
     "build": "ng build --base-href ./",
     "build:dev": "npm run build -- -c dev",
