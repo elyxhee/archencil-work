@@ -23,7 +23,7 @@
   "private": true,
   "electronProjectPath": "Z:/development/archencil",
   "scripts": {
-    "rebuild": "electron-rebuild -f -w sqlite3",
+    "rebuild": "electron-rebuild -f",
     "postinstall": "electron-builder install-app-deps && npm run rebuild",
     "start": "npm-run-all -p electron:serve ng:serve",
     "ng:serve": "ng serve -c web -o",
