@@ -23,7 +23,7 @@ To run the project, run the following command:
 npm run web
 ```
 
-Once the canvas is seen, go to the tools menu to the right and click the third button from top to down. Next, click on the canvas. A sticky note will be shown. Type then anything there so that you can see the problem with the caret, which sometimes "snaps". Also, try to click anywhere in the text and type from there. As you can see, the caret is not acting right.
+Once the canvas is seen, go to the tools menu to the right and click the third button from top to down. Next, click on the canvas. A sticky note will be shown. Type then anything there so that you can see the problem with the caret, which sometimes "snaps". Also, try to click anywhere in the text and type from there. As you can see, the caret is not acting right. The bigger the text is, the more obvious the problem becomes.
 
 Please, make sure the problem is solved for at least the latest versions of Chrome and Firefox.
 
