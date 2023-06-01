@@ -116,7 +116,7 @@
                     "builder": "@angular-builders/custom-webpack:dev-server",
                     "options": {
                         "browserTarget": "archencil:build",
-                        "allowedHosts": "all"
+                        "allowedHosts": ["all"]
                     },
                     "configurations": {
                         "dev": {
